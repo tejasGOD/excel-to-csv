@@ -1,0 +1,78 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #ff6600;
+    background: #1a1a1a;
+    max-width: 600px;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    color: #ff6600;
+    margin-bottom: 0.5em;
+}
+
+.header p {
+    color: #ffcc00;
+    font-family: 'Roboto', sans-serif;
+}
+
+.drop-zone {
+    border: 2px dashed #ff6600;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.drop-zone p {
+    margin: 0;
+    color: #ffcc00;
+    font-size: 1.2em;
+}
+
+.drop-zone.dragover {
+    background: #333;
+}
+
+button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ff3300;
+}
+
+#output {
+    margin-top: 20px;
+    color: #ffcc00;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type="file"] {
+    display: none;
+}

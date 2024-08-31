@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel to CSV Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollreveal/4.0.9/scrollreveal.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Excel to CSV Converter</h1>
+            <p>Convert your Excel files to CSV effortlessly</p>
+        </header>
+        <main>
+            <div class="drop-zone" id="drop-zone">
+                <p>Drag & Drop your Excel file here or click to upload</p>
+                <input type="file" id="fileInput" accept=".xls, .xlsx">
+            </div>
+            <button id="convertBtn" disabled>Convert to CSV</button>
+            <div id="output"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
